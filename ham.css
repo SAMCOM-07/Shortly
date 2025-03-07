@@ -1,0 +1,34 @@
+.hamburger-btn{
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+  width: 90%;
+  height: 3px;
+  transition: all 0.3s;
+}
+.hamburger-middle{
+  transform: translateY(5px);
+}
+.hamburger-bottom{
+  transform: translateY(10px);
+}
+
+
+/* .open{
+
+} */
+.open .hamburger-middle{
+  display: none;
+}
+.open .hamburger-top{
+  transform: rotate(224deg);
+  margin-top: 10px;
+}
+.open .hamburger-bottom{
+  transform: rotate(-224deg);
+  margin-top: -3px;
+}

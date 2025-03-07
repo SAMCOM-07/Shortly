@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1450px;
+
+  --color-brightRed: hsl(12, 88%, 59%);
+  --color-brightRedLight: hsl(12, 88%, 69%);
+  --color-brightRedSupLight: hsl(12, 88%, 95%);
+  --color-darkBlue: hsl(228, 39%, 23%);
+  --color-lightBlue: hsl(228, 39%, 32%);
+  --color-darkGrayishBlue: hsl(227, 12%, 61%);
+  --color-veryDarkBlue: hsl(233, 12%, 13%);
+  --color-veryPaleRed: hsl(13, 100%, 96%);
+  --color-veryLightGray: hsl(0, 0%, 60%);
+  --color-extremeLightGray: hsl(0, 0%, 90%);
+  --color-cyan: hsl(180, 66%, 49%);
+  --color-lightCyan: hsl(180, 66%, 60%);  
+}
+
+@keyframes {
+  .container {
+  width: 100%;
+}
+
+@media (min-width >= 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width >= 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width >= 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width >= 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+}
+
+.b4-footer{
+  background-image: url('/images/bg-boost-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+}
